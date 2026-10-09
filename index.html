@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehdirah Store | Shop Luxury</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Mehdirah Store</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Mehdirah Store</h1>
+        <p>Discover Curated Premium Products Just For You</p>
+        <button class="shop-now-btn">Shop New Arrivals</button>
+    </section>
+
+    <!-- Product Catalog Section -->
+    <main>
+        <h2 class="section-title">Featured Products</h2>
+        <div class="product-grid" id="product-container">
+            <!-- Products will be generated dynamically by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-btn" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will appear here -->
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">Total: $<span id="cart-total">0.00</span></div>
+            <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Mehdirah Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
